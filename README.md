@@ -11,4 +11,6 @@ Further Infos:
 
 [Anleitung](https://github.com/JsBergbau/BaikalAnleitung)
 
-[Project Website](https://github.com/sabre-io/Baikal)
+[Project Github](https://github.com/sabre-io/Baikal)
+
+[Projects Website](https://sabre.io/baikal/)
