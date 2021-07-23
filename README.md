@@ -8,5 +8,7 @@
 6. login on "http://youripaddress:8096" to start Setup
 
 Further Infos:
+
 [Anleitung](https://github.com/JsBergbau/BaikalAnleitung)
+
 [Project Website](https://github.com/sabre-io/Baikal)
