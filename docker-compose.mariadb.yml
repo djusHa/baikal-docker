@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  baikal:
+    container_name: baikal
+    image: $USER/baikal:latest
+    restart: always
+    volumes:
+      - ./data/config:/var/www/baikal/config
+      - ./data/Specific:/var/www/baikal/Specific
+    ports:
+      - 8096:80
+    networks:
+      - baikal-net
+    depends_on:
+      - mariadb
+
+  mariadb:
+    container_name: baikal-db
+    image: mariadb:latest
+    restart: always
+    volumes:
+      - ./data/db:/var/lib/mysql
+    networks:
+      - baikal-net
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${DATABASE}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+
+networks:
+ baikal-net:
