@@ -7,6 +7,8 @@
 5. rename `docker-compose.mariadb.yml` or `docker-compose.sqlite.yml` to `docker-compose.yml`
 6. run `docker-compose up -d`
 7. login on `http://youripaddress:8096` to start Setup
+8. Configure [Davx5](https://www.davx5.com/) and / or [Thunderbird](https://www.thunderbird.net)
+9. be Happy :-)
 
 Further Infos:
 
