@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  baikal:
+    container_name: baikal
+    image: $USER/baikal:latest
+    restart: always
+    volumes:
+      - ./data/config:/var/www/baikal/config
+      - ./data/Specific:/var/www/baikal/Specific
+    ports:
+      - 8096:80
